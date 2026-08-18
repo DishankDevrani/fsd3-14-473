@@ -75,6 +75,8 @@ const updateQuantity = async (id, qty) => {
     console.log("Quantity updated.");
 };
 
+
+
 const checkout = async () => {
     const cart = await getCart();
 

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirTag - Find Your Things</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        /* Navigation */
+        nav {
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #0071e3;
+        }
+
+        .buy-btn {
+            background: #0071e3;
+            color: white;
+            padding: 9px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 15px;
+            letter-spacing: -3px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* AirTag Design */
+        .airtag {
+            width: 220px;
+            height: 220px;
+            background: white;
+            border-radius: 50%;
+            margin: 40px 0;
+            box-shadow: 
+                0 15px 40px rgba(0,0,0,0.15),
+                inset 0 0 0 8px #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .airtag::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: #f7f7f7;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+
+        .airtag::before {
+            content: "";
+            position: absolute;
+            font-size: 45px;
+            color: #222;
+            z-index: 2;
+        }
+
+        /* Features */
+        .features {
+            background: white;
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 45px;
+            margin-bottom: 50px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            width: 280px;
+            padding: 35px 25px;
+            border-radius: 25px;
+            background: #f5f5f7;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Find Section */
+        .find-section {
+            padding: 100px 10%;
+            text-align: center;
+            background: #000;
+            color: white;
+        }
+
+        .find-section h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .find-section p {
+            max-width: 650px;
+            margin: auto;
+            color: #aaa;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .find-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: white;
+            color: black;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: #f5f5f7;
+            color: #777;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+
+            .features h2,
+            .find-section h2 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AirTag</div>
+
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#find">Find</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <a href="#" class="buy-btn">Buy</a>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>AirTag</h1>
+
+        <h2>Lose something? Find it.</h2>
+
+        <p>
+            AirTag is a simple and powerful way to keep track of
+            your important belongings. Attach it to your keys,
+            backpack, luggage, or anything you don't want to lose.
+        </p>
+
+        <div class="airtag"></div>
+
+        <a href="#features" class="buy-btn">Explore AirTag</a>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>Small device. Big help.</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3>Precision Finding</h3>
+                <p>
+                    Find your nearby belongings with accurate
+                    location guidance.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔊</div>
+                <h3>Play a Sound</h3>
+                <p>
+                    Make your AirTag play a sound when you
+                    need to locate it nearby.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Find My Network</h3>
+                <p>
+                    Use the Find My network to help locate
+                    your lost AirTag.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔋</div>
+                <h3>Replaceable Battery</h3>
+                <p>
+                    Replace the battery easily when it is
+                    time for a new one.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Find Section -->
+    <section class="find-section" id="find">
+
+        <h2>Never lose it again.</h2>
+
+        <p>
+            Attach AirTag to your everyday essentials and use
+            the Find My app to locate them when you need them.
+        </p>
+
+        <a href="#" class="find-button">Learn More</a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="about">
+        <p>AirTag Product Page | HTML & CSS Project</p>
+        <p>© 2026 Your Name</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "iPhone 17 Pro",
+    "brand": "Apple",
+    "price": 119999,
+    "display": "6.3-inch OLED",
+    "processor": "A19 Pro",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "48MP + 48MP + 48MP",
+    "battery": "Built-in rechargeable battery",
+    "os": "iOS 26"
+  },
+  {
+    "name": "Samsung Galaxy S26 Ultra",
+    "brand": "Samsung",
+    "price": 129999,
+    "display": "6.9-inch Dynamic AMOLED 2X",
+    "processor": "Snapdragon 8 Elite",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "200MP + 50MP + 50MP + 10MP",
+    "battery": "5000mAh",
+    "os": "Android 16"
+  },
+  {
+    "name": "Google Pixel 10 Pro",
+    "brand": "Google",
+    "price": 109999,
+    "display": "6.3-inch OLED",
+    "processor": "Google Tensor G5",
+    "ram": "16GB",
+    "storage": "256GB",
+    "camera": "50MP + 48MP + 48MP",
+    "battery": "4870mAh",
+    "os": "Android 16"
+  },
+  {
+    "name": "OnePlus 13",
+    "brand": "OnePlus",
+    "price": 69999,
+    "display": "6.82-inch AMOLED",
+    "processor": "Snapdragon 8 Elite",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "50MP + 50MP + 50MP",
+    "battery": "6000mAh",
+    "os": "Android"
+  },
+  {
+    "name": "Xiaomi 15 Ultra",
+    "brand": "Xiaomi",
+    "price": 99999,
+    "display": "6.73-inch AMOLED",
+    "processor": "Snapdragon 8 Elite",
+    "ram": "16GB",
+    "storage": "512GB",
+    "camera": "50MP + 200MP + 50MP + 50MP",
+    "battery": "5410mAh",
+    "os": "Android"
+  },
+  {
+    "name": "Nothing Phone (3)",
+    "brand": "Nothing",
+    "price": 79999,
+    "display": "6.67-inch AMOLED",
+    "processor": "Snapdragon 8s Gen 4",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "50MP + 50MP + 50MP",
+    "battery": "5150mAh",
+    "os": "Android"
+  },
+  {
+    "name": "Samsung Galaxy A56",
+    "brand": "Samsung",
+    "price": 41999,
+    "display": "6.7-inch Super AMOLED",
+    "processor": "Exynos 1580",
+    "ram": "8GB",
+    "storage": "128GB",
+    "camera": "50MP + 12MP + 5MP",
+    "battery": "5000mAh",
+    "os": "Android"
+  },
+  {
+    "name": "OnePlus Nord 5",
+    "brand": "OnePlus",
+    "price": 34999,
+    "display": "6.83-inch AMOLED",
+    "processor": "Snapdragon 8s Gen 3",
+    "ram": "8GB",
+    "storage": "256GB",
+    "camera": "50MP + 8MP",
+    "battery": "6800mAh",
+    "os": "Android"
+  },
+  {
+    "name": "Vivo X200 Pro",
+    "brand": "Vivo",
+    "price": 94999,
+    "display": "6.78-inch AMOLED",
+    "processor": "MediaTek Dimensity 9400",
+    "ram": "16GB",
+    "storage": "512GB",
+    "camera": "50MP + 200MP + 50MP",
+    "battery": "6000mAh",
+    "os": "Android"
+  },
+  {
+    "name": "Realme GT 7 Pro",
+    "brand": "Realme",
+    "price": 59999,
+    "display": "6.78-inch AMOLED",
+    "processor": "Snapdragon 8 Elite",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "50MP + 50MP + 8MP",
+    "battery": "5800mAh",
+    "os": "Android"
+  }
+]
